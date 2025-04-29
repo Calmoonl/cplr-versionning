@@ -9,7 +9,7 @@ $(document).on('click', '.send-bouton', function(){
     console.log(formData)
     $.ajax({
         type: "POST",
-        url: "https://cplr.oriatec-host.fr/support.php",
+        url: "https://hook.eu2.make.com/4425ojroja3mmh8ytdxdbg2hvquro71l", //"https://cplr.oriatec-host.fr/support.php",
         data: formData,
         success: function (response) {
             console.log(response)
