@@ -1,0 +1,18 @@
+name: Déploiement formulaire
+on: 
+  push:
+    branches: 
+      - master
+jobs: 
+  deploy: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Recup du code
+        uses: actions/checkout@v4
+      - name: Pouse le code sur gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with: 
+          publish_dir: ./
+          github_token: {{ secrets.GITHUB_TOKEN }}
+permissions: 
+  contents: write
