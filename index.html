@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div>
+        <p>Formulaire</p>
+        <input name="nom" type="text" placeholder="Nom" class="nom">
+        <input name="prenom" type="text" placeholder="Prénom" class="prenom">
+        <input name="message" type="text" placeholder="Message" class="message">
+        <input name="email" type="text" placeholder="Adresse mail" class="email">
+        <input name="numero" type="text" placeholder="Numéro de téléphone" class="numero">
+        <select name="service" id="service" class="service">
+            <option value="">-- Choisir un service --</option>
+            <option value="commercial">Commercial</option>
+            <option value="technique">Technique</option>
+            <option value="direction">Direction</option>
+        </select>
+        <button class="send-bouton">Envoyer</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
