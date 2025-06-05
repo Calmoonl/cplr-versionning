@@ -5,24 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div>
-        <p>Formulaire</p>
-        <input name="nom" type="text" placeholder="Nom" class="nom">
-        <input name="prenom" type="text" placeholder="Prénom" class="prenom">
-        <input name="message" type="text" placeholder="Message" class="message">
-        <input name="email" type="text" placeholder="Adresse mail" class="email">
-        <input name="numero" type="text" placeholder="Numéro de téléphone" class="numero">
-        <select name="service" id="service" class="service">
-            <option value="">-- Choisir un service --</option>
-            <option value="commercial">Commercial</option>
-            <option value="technique">Technique</option>
-            <option value="direction">Direction</option>
-        </select>
-        <button class="send-bouton">Envoyer</button>
+    <div class="main">
+        <div class="form-envoi">
+            <h1>Formulaire</h1>
+            <hr>
+            <input name="nom" type="text" placeholder="Nom" class="nom">
+            <input name="prenom" type="text" placeholder="Prénom" class="prenom">
+            <input name="message" type="text" placeholder="Message" class="message">
+            <input name="email" type="text" placeholder="Adresse mail" class="email">
+            <input name="numero" type="text" placeholder="Numéro de téléphone" class="numero">
+            <select name="service" id="service" class="service">
+                <option value="">Choisir un service</option>
+                <option value="commercial">Commercial</option>
+                <option value="technique">Technique</option>
+                <option value="direction">Direction</option>
+            </select>
+            <hr>
+            <button class="send-bouton">ENVOYER</button>
+        </div>
     </div>
+
+
+    <!-- From Uiverse.io by JkHuger --> 
+
+  <div class="rocket">
+    <div class="rocket-body">
+      <div class="body"></div>
+      <div class="fin fin-left"></div>
+      <div class="fin fin-right"></div>
+      <div class="window"></div>
+    </div>
+    <div class="exhaust-flame"></div>
+    <ul class="exhaust-fumes">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul class="star">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <h1 class="rocket-text">Votre demande a bien été soumise !</h1>
+
+
+    
 </body>
 <script src="script.js"></script>
 </html>
