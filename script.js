@@ -12,10 +12,17 @@ $(document).on('click', '.send-bouton', function(){
     //     return;
     // }
 
-    tl.to('.form-envoi', {
-        scale: 50,
+    gsap.to('body',{
+        backgroundColor:"white",
         duration: 1,
-        ease: "ease-in-out"
+        ease: "power4.in"
+    })
+
+    tl.to('.form-envoi', {
+        scale: 100,
+        duration: 1,
+        opacity:0,
+        ease: "power4.in"
     })
 
     tl.to('.rocket',{
